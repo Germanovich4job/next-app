@@ -87,3 +87,17 @@ model blogPost {
   updatedAt   DateTime @updatedAt
 
 }
+
+model Product {
+  id           Int      @id @default(autoincrement())
+  title        String
+  description  String
+  price        Float
+  quantity     Int
+  category     String?
+  manufacturer String?
+  imageUrl     String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
